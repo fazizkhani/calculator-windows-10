@@ -223,59 +223,17 @@ color: antiquewhite;
 .newButtonsBlock{
     display:none;
 }
-
-/* @media 
+/*when our calculator is in the biggest shape*/
+ @media 
 only screen and (min-width: 1060px),
 (min-device-width: 1060px) and (max-device-width: 1224px)  {
    
-.h1{
-    width: 100%;
-    height: 3.5%;
-}
-.h2{
-    width: 80%;
-    height: 4%;
-}
-.h3{
-    width: 80%;
-    height: 19.5%;
-}
-.h4{
-    width: 80%;
-   height:6.5%;
-}
-.h5{
-    width: 80%;
-    height:66%;
-}
-	/* Force table to not be like tables anymore */
-	/* #mm{
-        display: none;
-    }
-    .mg{
-        
-        width:80px;
-        padding-top: 18px;
-        height: 100%;
-        margin: 2px;
-    }
-    .mb{
-        width:80px;
-        padding-top: 18px;
-        height: 100%;
-        margin: 2px;
-    }
-    #mm{
-        display: none;
-    }
- .tshape{
-     display: none;
- }
-    .tt {
+ 
+    .ButtomsBlock {
         display: none;
         
     }
-    .newtable{
+    .newButtonsBlock{
        
         display: table;
         position: relative;
@@ -284,7 +242,7 @@ only screen and (min-width: 1060px),
         background-color: rgb(237, 237, 237);
 
     }
-    .newtable tr, td {
+    .newButtonsBlock tr, td {
         cursor: default;
         position: relative;
         width: 20%;
@@ -294,125 +252,56 @@ only screen and (min-width: 1060px),
         text-align: center;
         background-color: rgb(244, 244, 244);
       }
-     .newtable td:hover{
+     .newButtonsBlock td:hover{
           background-color: rgb(218, 218, 218);
       }
-      .newtable td:active{
+      .newButtonsBlock td:active{
           background-color: rgb(202, 202, 202);
       }
-      .num{
-          font-size: 30px;
-          font: bold;
-          background-color: rgb(251, 251, 251);
-      }
+      
    
-      #nj1:hover  {
+      #newMathOperators1:hover  {
           
         background-color: rgb(26,134, 219);
         color: antiquewhite;
     }
-    #nj1:active  {
+    #newMathOperators1:active  {
         background-color: rgb(176, 220, 255);
         color: aliceblue;
     }
-    #nj2:hover  {
+    #newMathOperators2:hover  {
         background-color: rgb(26,134, 219);
         color: antiquewhite;
     }
-    #nj2:active  {
+    #newMathOperators2:active  {
         background-color: rgb(176, 220, 255);
         color: aliceblue;
-    } #nj3:hover  {
+    } #newMathOperators3:hover  {
         background-color: rgb(26,134, 219);
         color: antiquewhite;
     }
-    #nj3:active  {
+    #newMathOperators3:active  {
         background-color: rgb(176, 220, 255);
         color: aliceblue;
     } 
-    #nj4:hover  {
+    #newMathOperators4:hover  {
         background-color: rgb(26,134, 219);
         color: antiquewhite;
     }
-    #nj4:active  {
+    #newMathOperators4:active  {
         background-color: rgb(176, 220, 255);
         color: aliceblue;
     }
-     #nj5:hover  {
+     #newMathOperators5:hover  {
         background-color: rgb(26,134, 219);
         color: antiquewhite;
     }
-    #nj5:active  {
+    #newMathOperators5:active  {
         background-color: rgb(176, 220, 255);
         color: aliceblue;
     }
    
     
 }
-@media 
-only screen and (max-width: 356px),(min-device-width: 1px) and (max-device-width: 356px) 
-  {
-      .main{
-          width: 328px;
-         height: 500px;
-    
-        }
-        input[type=number]{
-            padding-right: 4px;
-        font-size: 55px;
-    }
-    .h1{
-        height:30px;
-    }
-    .h2{
-        height:30px;
-    }
-    .h4{
-        height: 22px;
-        width:95%;
-        margin:5px;
-    }
-    .mg{
-        padding-top: 8px;
-        width: 47px;
-        margin:1px;
-    }
-    .mb{
-        padding-top: 8px;
-        width: 47px;
-        margin:1px;
-    }
-    .h5{
-        position: relative;
-        width: 100%;
-        height: 59%;
-        background-color: rgb(237, 237, 237);
-    }
-    }
-    @media 
-    only screen and (min-width: 650px) and (max-width:1050px),(min-device-width: 650px) and (max-device-width: 1050px) 
-      {
 
-        .tshape{
-            display: none;
-        }
-        .h1{
-            width: 100%;
-            height:3.5%;
-        }
-        .h2{
-            width: 80%;
-            height:4%;
-        }
-        .h3{
-            width: 80%;
-        }
-        .h4{
-            width: 80%;
-            height:4%;
-        }
-        .h5{
-            width: 80%;
-            height: 65%;
-        }
-    } */ 
+    
