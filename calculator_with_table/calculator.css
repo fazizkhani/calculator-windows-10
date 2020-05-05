@@ -4,34 +4,24 @@ html, body{
     width:99%;
     
 }
-.main{
+.wholeCalculator{
     position: relative;
     background-color: rgb(237, 237, 237);
     width: 100%;
     height: 100%;
     border: 1px solid rgb(24, 131, 215);
 }
-.h1{
+.firstBlock{
+    padding-left: 5px;
     position: relative;
-    height: 3.5%;
-    width: 100%;
+    height: 3.8%;
+    width: 99.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
     background-color: rgb(237, 237, 237);
- 
-}
-.caln{
-padding-top: 5px;
-padding-left: 10px;
     cursor: default;
-display: inline-block; 
-height: 50%;
-width:30%;
-float:left;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 12px;
-background-color: rgb(237, 237, 237);
-
 }
-.topsigns{
+.topSigns{
  
     cursor: default;
     float:right;
@@ -43,88 +33,93 @@ font-size: 22px;
 text-align: center;
 background-color: rgb(237, 237, 237);
 }
-.topsigns:hover{
+.topSigns:hover{
     background-color: rgb(218, 218, 218);
 }
-.topsigns:active{
+.topSigns:active{
     background-color: rgb(202, 202, 202);
-}
-#close:hover{
-    background-color: rgb(232, 17, 35);
-}
-#close:active{
-    background-color: rgb(241, 112, 122);
-    color: azure;
-}
-.h2{
-    position: relative;
-    height:4%;
-    width: 100%;
-    background-color: rgb(237, 237, 237);
-}
-.seline{
-    cursor: default;
-    padding-top: 10px;
-    padding-right: 8px;
-    padding-left: 8px;
-    float:left;
-    display: inline-block; 
-height: 100%;
-width: 30px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-text-align: center;
-background-color: rgb(237, 237, 237);
 }
 
-.seline:hover{
+#closeButton:hover{
+    background-color: rgb(232, 17, 35);
+
+    }
+#closeButton:active{
+    background-color: rgb(241, 112, 122);
+    }
+.topSignsImg{
+    height: 15px;
+    width: 14px;
+    padding-bottom: 5px;
+}
+.secondBlock{
+    height:5%;
+    width: 100%;
+    background-color: rgb(237, 237, 237);
+}
+.menuSign{
+width: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: rgb(237, 237, 237);
+
+}
+.menuSign:hover{
     background-color: rgb(218, 218, 218);
 }
-.seline:active{
+.menuSign:active{
     background-color: rgb(202, 202, 202);
+} 
+#menuPic{
+    height: 50%;
+    width: 20px;
+    margin-top: 4px;
+    margin-left: 4px;
 }
-.standard{
-    cursor: default;
-display: inline-block; 
+.standardSign{
+   
+cursor: default;
 height: 100%;
-padding-top: 5px;
-width: 10%;
+width: 15%;
+padding-left: 30px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 20px;
-float:left;
+font-size: 17px;
+
 background-color: rgb(237, 237, 237);
 }
-.tshape{
+.timeShape{
+   
     cursor: default;
-    display: inline-block; 
     height: 100%;
-    width: 40px;
-    float: right;
+    width: 35px;
     background-color: rgb(237, 237, 237);
-    padding-top: 10px;
-    text-align: center;
-    
+    float:right;
 }
-.tshape:hover{
+.timeShape:hover{
     background-color: rgb(218, 218, 218);
 }
-.tshape:active{
+.timeShape:active{
     background-color: rgb(202, 202, 202);
 }
-.h3{
+#timePic{
+    height: 80%;
+    width: 20px;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+.thirdBlock{
     position: relative;
-    height: 21%;
+    height: 18%;
     width: 100%;
-    
     background-color: rgb(237, 237, 237);
 }
 input[type=number] {
- padding-right: 5px;
+ padding-right: 15px;
     border: none;
     width: 95%;
     float: right;
     height: 70%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     text-align: right;
     cursor: default;
     background-color: rgb(237, 237, 237);
@@ -143,26 +138,26 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
-.h4{
-    height: 3.8%;
+.fourthBlock{
+    height: 7%;
     width: 100%;
     background-color: rgb(237, 237, 237);
 }
-.mg{
+.memPartGray{
 
 padding-top: 18px;
-    cursor: default;
+cursor: default;
 color: darkgrey;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: 12px;
 text-align: center;
 display: inline-block; 
 height: 100%;
-width:15%;
+width:8%;
 
 background-color: rgb(237, 237, 237);
 }
-.mb{
+.memPartBlack{
     padding-top: 18px;
     cursor: default;
     color:black;
@@ -171,65 +166,65 @@ background-color: rgb(237, 237, 237);
     text-align: center;
     display: inline-block; 
     height:100%;
-    width: 15%;
+    width: 8%;
    
     background-color: rgb(237, 237, 237);
 }
-.mb:hover{
+.memPartBlack:hover{
 background-color: rgb(218, 218, 218);
 }
-.mb:active{
+.memPartBlack:active{
     background-color: rgb(202, 202, 202);
 }
-#mm{
-    float: right;
+#memMinus{
+    display:none;
 }
-.h5{
+.fifthBlock{
     display: table;
     position: relative;
     width: 100%;
-    height: 65%;
+    height:66%;
     background-color: rgb(237, 237, 237);
 }
-.tt{
+.ButtomsBlock{
     overflow: auto;
     position: relative;
     width:100%;
     height: 100%;
     background-color: rgb(237, 237, 237);
 }
-.tt tr, td {
+.ButtomsBlock tr, td {
     cursor: default;
     position: relative;
     width: 25%;
-    height: 5%;
+    height: 15%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     text-align: center;
     background-color: rgb(244, 244, 244);
   }
-  .tt td:hover{
+  .ButtomsBlock td:hover{
       background-color: rgb(218, 218, 218);
   }
-  .tt td:active{
+  .ButtomsBlock td:active{
       background-color: rgb(202, 202, 202);
   }
-  .num{
+  .numButtons{
       background-color: rgb(251, 251, 251);
   }
-.ns:hover{
+.mathOperators:hover{
 background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-.ns:active{
+.mathOperators:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-.newtable{
+.newButtonsBlock{
     display:none;
 }
 
-@media 
+/* @media 
 only screen and (min-width: 1060px),
 (min-device-width: 1060px) and (max-device-width: 1224px)  {
    
@@ -254,7 +249,7 @@ only screen and (min-width: 1060px),
     height:66%;
 }
 	/* Force table to not be like tables anymore */
-	#mm{
+	/* #mm{
         display: none;
     }
     .mg{
@@ -420,4 +415,4 @@ only screen and (max-width: 356px),(min-device-width: 1px) and (max-device-width
             width: 80%;
             height: 65%;
         }
-    }
+    } */ 
