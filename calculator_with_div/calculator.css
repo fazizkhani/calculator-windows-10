@@ -1,8 +1,12 @@
 
 html, body{
     width:99%;
-    height: 750px;
+    height: 100%;
 }
+
+    
+    
+
 .wholeCalculator{
     position: relative;
     background-color: rgb(237, 237, 237);
@@ -109,9 +113,16 @@ background-color: rgb(237, 237, 237);
 .time_Sign:active{
     background-color: rgb(202, 202, 202);
 }
+.part_Responsive{
+    position: relative;
+    background-color: rgb(237, 237, 237);
+    width: 100%;
+    height: 85%;
+    /* border: 1px solid rgb(24, 131, 215); */
+}
 .third_Block{
     position: relative;
-    height: 21%;
+    height: 30%;
     width: 100%;
     
     background-color: rgb(237, 237, 237);
@@ -143,13 +154,13 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 .fourth_Block{
-    height: 3.8%;
+    height: 6%;
     width: 100%;
     background-color: rgb(237, 237, 237);
 }
 .memSign_Gray{
 
-padding-top: 18px;
+/* padding-top: 0.25%; */
     cursor: default;
 color: darkgrey;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -162,7 +173,7 @@ width:15%;
 background-color: rgb(237, 237, 237);
 }
 .memSign_Black{
-    padding-top: 18px;
+    /* padding-top: 0.25%; */
     cursor: default;
     color:black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -194,18 +205,21 @@ background-color: rgb(218, 218, 218);
 
   
 .Buttons_Block{
-    display: table;
+    display: relative;
     width: 100%;
     height: 100%;
+
 }
 
 .Buttons{
     float:left;
-    height: 10.2%;
+    height: 17%;
     width:24%;
     text-align: center;
-    padding-top: 30px;
-    font-size: 25px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+   
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(244, 244, 244);
  border: 1px solid rgb(237, 237, 237);
@@ -217,13 +231,16 @@ background-color: rgb(218, 218, 218);
     background-color: rgb(202, 202, 202);
 }
 .num_Buttons{
-    height: 10.2%;
+    height: 17%;
     width: 24%;
     float: left;
     text-align: center;
-    padding-top: 30px;
+    /* padding-top: 5%; */
     background-color: rgb(251, 251, 251);
     border: 1px solid rgb(237, 237, 237);
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .num_Buttons:hover{
@@ -284,23 +301,23 @@ only screen and (min-width: 1060px),
   } 
 .first_Block{
     width: 100%;
-    height: 3.5%;
+    height: 27px;
 }
 .second_Block{
     width: 100%;
-    height: 4%;
+    height:  27px;
 }
 .third_Block{
     width: 100%;
-    height: 19.5%;
+    height: 23%;
 }
 .fourth_Block{
     width: 100%;
-   height:6.5%;
+   height:4%;
 }
 .fifth_Block{
     width: 100%;
-    height: 64%;
+    height: 60%;
 }
 	
 	#memSing_minus{
@@ -309,27 +326,17 @@ only screen and (min-width: 1060px),
     .memSign_Gray{
         
         width:80px;
-        padding-top: 18px;
+      
         height: 100%;
-        margin: 2px;
+       
     }
     .memSign_Black{
         width:80px;
-        padding-top: 18px;
         height: 100%;
-        margin: 2px;
     }
     #memSing_minus{
         display: none;
-    }
- 
-   
-   
-      .num_Buttons{
-          font-size: 30px;
-          font: bold;
-          background-color: rgb(251, 251, 251);
-      }
+    }     
    .Buttons_Block{
    width:100%;
    height:100%;
@@ -337,9 +344,8 @@ display:flex;
 flex-flow: row;
 flex-wrap: wrap;
 flex-flow: row wrap;
-   }
- 
 
+   }
 #cell1{
 order: 1;
 }
@@ -386,7 +392,9 @@ order: 1;
     order:14;
 }
 #new_Cell{
-    display:inline-block;
+    display: flex;
+  justify-content: center;
+  align-items: center;
     order:16;
 }
 #num7{
@@ -417,22 +425,30 @@ order: 1;
     order:25;
 }
 .Buttons{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 19.78%;
-    height: 14%;
+    height: 26.5%;
+    font-size: 15px;
+    font: bold;
+   
 }
 .num_Buttons{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 19.78%;
-    height: 14%;
+    height: 26.5%;
 }
+
 }
 /*the smallest shape of calculator*/
 @media 
 only screen and (max-width: 356px),(min-device-width: 1px) and (max-device-width: 356px) 
   {
       .wholeCalculator{
-          width: 328px;
+          width: 320px;
          height: 500px;
     
         }
@@ -442,9 +458,15 @@ only screen and (max-width: 356px),(min-device-width: 1px) and (max-device-width
     }
     .first_Block{
         height:30px;
+        width: 320px;
     }
     .second_Block{
         height:30px;
+        width: 320px;
+    }
+    .part_Responsive{
+        height: 340px;
+        width: 320px;
     }
     .fourth_Block{
         height: 22px;
@@ -453,26 +475,26 @@ only screen and (max-width: 356px),(min-device-width: 1px) and (max-device-width
     }
     .memSign_Gray{
         padding-top: 8px;
-        width: 47px;
+        width: 43px;
         margin:1px;
     }
     .memSign_Black{
         padding-top: 8px;
-        width: 47px;
+        width: 43px;
         margin:1px;
     }
     .fifth_Block{
         position: relative;
-        width:328px;
+        width:320px;
         height: 100px;
         background-color: rgb(237, 237, 237);
     }
     .Buttons_Block{
-        width: 328px;
+        width: 320px;
         height: 100px;
     }
     .num_Buttons{
-        width: 80px;
+        width: 78px;
         height:35px;
         float: left;
         padding-top: 12.5px;
@@ -480,10 +502,11 @@ only screen and (max-width: 356px),(min-device-width: 1px) and (max-device-width
         text-align: center;
         background-color: rgb(251, 251, 251);
         border: 1px solid rgb(237, 237, 237);
+        
     }
     .Buttons{
         float:left;
-        width: 80px;
+        width: 78px;
         height:35px;
         padding-top: 12.5px;
         text-align: center;
@@ -503,28 +526,42 @@ only screen and (max-width: 356px),(min-device-width: 1px) and (max-device-width
         }
         .first_Block{
             width: 100%;
-            height:3.5%;
+            height:27px;
         }
         .second_Block{
             width: 100%;
-            height:4%;
+            height:27px;
         }
         .third_Block{
             width: 100%;
+            height: 30%;
         }
         .fourth_Block{
             width: 100%;
-            height:4%;
+            height:7%;
         }
         .fifth_Block{
             width: 100%;
-            height: 62%;}
-            .num_Buttons{
+            height: 61%;}
+        .Buttons_Block{
+                width:100%;
+                height: 100%;
+         }
+        .num_Buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
                 width: 24.5%;
-                height: 10.5%;
+                height: 18%;
+               
             }
             .Buttons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 24.5%;
-                height: 10.5%;
+                height: 18%;
+                font-size: 100%;
+               
             }
     }
