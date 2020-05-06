@@ -1,29 +1,28 @@
 
 html, body{
-    height:100%;
     width:99%;
-    
+    height: 750px;
 }
-.main{
+.wholeCalculator{
     position: relative;
     background-color: rgb(237, 237, 237);
     width: 100%;
     height: 100%;
     border: 1px solid rgb(24, 131, 215);
 }
-.h1{
+.first_Block{
     position: relative;
-    height: 3.5%;
+    height: 27px;
     width: 100%;
     background-color: rgb(237, 237, 237);
  
 }
-.caln{
+.calName{
 padding-top: 5px;
 padding-left: 10px;
     cursor: default;
 display: inline-block; 
-height: 50%;
+height: 10px;
 width:30%;
 float:left;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,61 +30,61 @@ font-size: 12px;
 background-color: rgb(237, 237, 237);
 
 }
-.topsigns{
+.top_Sings{
  
     cursor: default;
     float:right;
     display: inline-block; 
-height: 100%;
+height: 27px;
 width: 45px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: 22px;
 text-align: center;
 background-color: rgb(237, 237, 237);
 }
-.topsigns:hover{
+.top_Sings:hover{
     background-color: rgb(218, 218, 218);
 }
-.topsigns:active{
+.top_Sings:active{
     background-color: rgb(202, 202, 202);
 }
-#close:hover{
+#close_Button:hover{
     background-color: rgb(232, 17, 35);
 }
-#close:active{
+#close_Button:active{
     background-color: rgb(241, 112, 122);
     color: azure;
 }
-.h2{
+.second_Block{
     position: relative;
-    height:4%;
+    height:27px;
     width: 100%;
     background-color: rgb(237, 237, 237);
 }
-.seline{
+.menu_Sign{
     cursor: default;
     padding-top: 10px;
     padding-right: 8px;
     padding-left: 8px;
     float:left;
     display: inline-block; 
-height: 100%;
+height: 27px;
 width: 30px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 text-align: center;
 background-color: rgb(237, 237, 237);
 }
 
-.seline:hover{
+.menu_Sign:hover{
     background-color: rgb(218, 218, 218);
 }
-.seline:active{
+.menu_Sign:active{
     background-color: rgb(202, 202, 202);
 }
-.standard{
+.standard_Sign{
     cursor: default;
 display: inline-block; 
-height: 100%;
+height: 27px;
 padding-top: 5px;
 width: 10%;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -93,10 +92,10 @@ font-size: 20px;
 float:left;
 background-color: rgb(237, 237, 237);
 }
-.tshape{
+.time_Sign{
     cursor: default;
     display: inline-block; 
-    height: 100%;
+    height: 27px;
     width: 40px;
     float: right;
     background-color: rgb(237, 237, 237);
@@ -104,13 +103,13 @@ background-color: rgb(237, 237, 237);
     text-align: center;
     
 }
-.tshape:hover{
+.time_Sign:hover{
     background-color: rgb(218, 218, 218);
 }
-.tshape:active{
+.time_Sign:active{
     background-color: rgb(202, 202, 202);
 }
-.h3{
+.third_Block{
     position: relative;
     height: 21%;
     width: 100%;
@@ -143,12 +142,12 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
   margin: 0; 
 }
-.h4{
+.fourth_Block{
     height: 3.8%;
     width: 100%;
     background-color: rgb(237, 237, 237);
 }
-.mg{
+.memSign_Gray{
 
 padding-top: 18px;
     cursor: default;
@@ -162,7 +161,7 @@ width:15%;
 
 background-color: rgb(237, 237, 237);
 }
-.mb{
+.memSign_Black{
     padding-top: 18px;
     cursor: default;
     color:black;
@@ -175,16 +174,16 @@ background-color: rgb(237, 237, 237);
    
     background-color: rgb(237, 237, 237);
 }
-.mb:hover{
+.memSign_Black:hover{
 background-color: rgb(218, 218, 218);
 }
-.mb:active{
+.memSign_Black:active{
     background-color: rgb(202, 202, 202);
 }
-#mm{
+#memSing_minus{
     float: right;
 }
-.h5{
+.fifth_Block{
     position: relative;
     display: table;
     position: relative;
@@ -193,21 +192,17 @@ background-color: rgb(218, 218, 218);
     background-color: rgb(237, 237, 237);
 }
 
-  .num{
-      float: left;
-      background-color: rgb(251, 251, 251);
-  }
   
-.t1{
+.Buttons_Block{
     display: table;
     width: 100%;
     height: 100%;
 }
 
-.celll{
+.Buttons{
     float:left;
-    height: 17.5%;
-    width:23%;
+    height: 10.2%;
+    width:24%;
     text-align: center;
     padding-top: 30px;
     font-size: 25px;
@@ -215,117 +210,127 @@ background-color: rgb(218, 218, 218);
     background-color: rgb(244, 244, 244);
  border: 1px solid rgb(237, 237, 237);
 }
-.celll:hover{
+.Buttons:hover{
     background-color: rgb(218, 218, 218);
 }
-.celll:active{
+.Buttons:active{
     background-color: rgb(202, 202, 202);
 }
-.num{
-    height: 17.5%;
-    width: 23%;
+.num_Buttons{
+    height: 10.2%;
+    width: 24%;
     float: left;
     text-align: center;
     padding-top: 30px;
     background-color: rgb(251, 251, 251);
     border: 1px solid rgb(237, 237, 237);
 }
-.num:hover{
+
+.num_Buttons:hover{
     background-color: rgb(218, 218, 218);
 }
-.num:active{
+.num_Buttons:active{
     background-color: rgb(202, 202, 202);
 }
-#blue1:hover{
+#blue_Button1:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue1:active{
+#blue_Button1:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#blue2:hover{
+#blue_Button2:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue2:active{
+#blue_Button2:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#blue3:hover{
+#blue_Button3:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue3:active{
+#blue_Button3:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#blue4:hover{
+#blue_Button4:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue4:active{
+#blue_Button4:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#clnone{
+#blue_Button5:hover{
+    background-color: rgb(26,134, 219);
+color: antiquewhite;
+}
+#blue_Button5:active{
+    background-color: rgb(176, 220, 255);
+    color: aliceblue;
+}
+#new_Cell{
     display: none;
 }
+/*the biggest shape of calculator is below*/
 @media 
 only screen and (min-width: 1060px),
 (min-device-width: 1060px) and (max-device-width: 1224px)  {
-  .tshape{
+  .time_Sign{
       display: none;
   } 
-.h1{
+.first_Block{
     width: 100%;
     height: 3.5%;
 }
-.h2{
-    width: 80%;
+.second_Block{
+    width: 100%;
     height: 4%;
 }
-.h3{
-    width: 80%;
+.third_Block{
+    width: 100%;
     height: 19.5%;
 }
-.h4{
-    width: 80%;
+.fourth_Block{
+    width: 100%;
    height:6.5%;
 }
-.h5{
-    width: 80%;
+.fifth_Block{
+    width: 100%;
     height: 64%;
 }
-	/* Force table to not be like tables anymore */
-	#mm{
+	
+	#memSing_minus{
         display: none;
     }
-    .mg{
+    .memSign_Gray{
         
         width:80px;
         padding-top: 18px;
         height: 100%;
         margin: 2px;
     }
-    .mb{
+    .memSign_Black{
         width:80px;
         padding-top: 18px;
         height: 100%;
         margin: 2px;
     }
-    #mm{
+    #memSing_minus{
         display: none;
     }
  
    
    
-      .num{
+      .num_Buttons{
           font-size: 30px;
           font: bold;
           background-color: rgb(251, 251, 251);
       }
-   .t1{
+   .Buttons_Block{
    width:100%;
    height:100%;
 display:flex;
@@ -335,31 +340,31 @@ flex-flow: row wrap;
    }
  
 
-#cl1{
+#cell1{
 order: 1;
 }
-#cl2{
+#cell2{
     order: 6;
 }
-#cl3{
+#cell3{
     order: 11;
 }
-#cl4{
+#cell4{
     order:21;
 }
-#cl5{
+#cell5{
     order:2;
 }
-#cl6{
+#cell6{
     order:3;
 }
-#cl7{
+#cell7{
     order:4;
 }
-#cl8{
+#cell8{
     order:22;
 }
-#cl9{
+#cell9{
     order:24;
 }
 #num1{
@@ -380,7 +385,7 @@ order: 1;
 #num6{
     order:14;
 }
-#clnone{
+#new_Cell{
     display:inline-block;
     order:16;
 }
@@ -396,36 +401,37 @@ order: 1;
 #num10{
     order:23;
 }
-#blue1{
+#blue_Button1{
     order:5;
 }
-#blue2{
+#blue_Button2{
     order:10;
 }
-#blue3{
+#blue_Button3{
     order:15;
 }
-#blue4{
+#blue_Button4{
     order:20;
 }
-#blue5{
+#blue_Button5{
     order:25;
 }
-.celll{
+.Buttons{
     display: inline-block;
-    width: 19%;
-    height: 15.3%;
+    width: 19.78%;
+    height: 14%;
 }
-.num{
+.num_Buttons{
     display: inline-block;
-    width: 19%;
-    height: 15.3%;
+    width: 19.78%;
+    height: 14%;
 }
 }
+/*the smallest shape of calculator*/
 @media 
 only screen and (max-width: 356px),(min-device-width: 1px) and (max-device-width: 356px) 
   {
-      .main{
+      .wholeCalculator{
           width: 328px;
          height: 500px;
     
@@ -434,73 +440,91 @@ only screen and (max-width: 356px),(min-device-width: 1px) and (max-device-width
             padding-right: 4px;
         font-size: 55px;
     }
-    .h1{
+    .first_Block{
         height:30px;
     }
-    .h2{
+    .second_Block{
         height:30px;
     }
-    .h4{
+    .fourth_Block{
         height: 22px;
         width:95%;
         margin:5px;
     }
-    .mg{
+    .memSign_Gray{
         padding-top: 8px;
         width: 47px;
         margin:1px;
     }
-    .mb{
+    .memSign_Black{
         padding-top: 8px;
         width: 47px;
         margin:1px;
     }
-    .h5{
+    .fifth_Block{
         position: relative;
         width:328px;
-        height: 200px;
+        height: 100px;
         background-color: rgb(237, 237, 237);
     }
-    .t1{
+    .Buttons_Block{
         width: 328px;
-        height: 180px;
+        height: 100px;
     }
-    .row{
-        width: 328px;
-        height:30px;
-    }
-    .celll{
+    .num_Buttons{
         width: 80px;
-        height:30px;
+        height:35px;
+        float: left;
+        padding-top: 12.5px;
+        font-size: 20px;
+        text-align: center;
+        background-color: rgb(251, 251, 251);
+        border: 1px solid rgb(237, 237, 237);
     }
-    .num{
+    .Buttons{
+        float:left;
         width: 80px;
-        height:30px;
+        height:35px;
+        padding-top: 12.5px;
+        text-align: center;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(244, 244, 244);
+     border: 1px solid rgb(237, 237, 237);
     }
     }
+    /*normal size of calculator between the biggest shape and  the smallest shape when time shape disappear*/
     @media 
-    only screen and (min-width: 650px) and (max-width:1050px),(min-device-width: 650px) and (max-device-width: 1050px) 
+    only screen and (min-width: 650px) and (max-width:1060px),(min-device-width: 650px) and (max-device-width: 1060px)
       {
 
-        .tshape{
+        .time_Sign{
             display: none;
         }
-        .h1{
+        .first_Block{
             width: 100%;
             height:3.5%;
         }
-        .h2{
-            width: 80%;
+        .second_Block{
+            width: 100%;
             height:4%;
         }
-        .h3{
-            width: 80%;
+        .third_Block{
+            width: 100%;
         }
-        .h4{
-            width: 80%;
+        .fourth_Block{
+            width: 100%;
             height:4%;
         }
-        .h5{
-            width: 80%;
+        .fifth_Block{
+            width: 100%;
             height: 62%;}
+            .num_Buttons{
+                width: 24.5%;
+                height: 10.5%;
+            }
+            .Buttons{
+                width: 24.5%;
+                height: 10.5%;
+            }
     }

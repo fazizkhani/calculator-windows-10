@@ -1,1 +1,1 @@
-This is HTML and CSS code for Calculator Windows 10. The Calculator is written with Div Tag. It is a practice for learning HTML and CSS. The CSS code is Responsive
+This code is for calculator windows 10 . step 1 of cs_internship
