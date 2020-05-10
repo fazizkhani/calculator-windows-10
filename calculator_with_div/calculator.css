@@ -4,20 +4,20 @@ html, body{
     height: 100%;
     max-height: 100%;
 }
-.main-Block{
+.main-block{
     position: relative;
     background-color: rgb(237, 237, 237);
     width: 100%;
     height: 100%;
     max-height: 100%; 
 }
-.first-Block{
+.first-block{
     position: relative;
     height: 40px;
     width: 100%;
     background-color: rgb(237, 237, 237);
 }
-.cal-Name{
+.cal-name{
     padding-top: 5px;
     padding-left: 10px;
     cursor: default;
@@ -29,7 +29,7 @@ html, body{
     font-size: 12px;
     background-color: rgb(237, 237, 237);
 }
-.close-min-max-Icons{
+.close-min-max-icons{
     cursor: default;
     float:right;
     display:inline-flex;
@@ -42,26 +42,26 @@ html, body{
     text-align: center;
     background-color: rgb(237, 237, 237);
 }
-.close-min-max-Icons:hover{
+.close-min-max-icons:hover{
     background-color: rgb(218, 218, 218);
 }
-.close-min-max-Icons:active{
+.close-min-max-icons:active{
     background-color: rgb(202, 202, 202);
 }
-#close-Button:hover{
+#close-button:hover{
     background-color: rgb(232, 17, 35);
 }
-#close-Button:active{
+#close-button:active{
     background-color: rgb(241, 112, 122);
     color: azure;
 }
-.second-Block{
+.second-block{
     position: relative;
     height:35px;
     width: 100%;
     background-color: rgb(237, 237, 237);
 }
-.menu-Icon{
+.menu-icon{
     cursor: default;
     float:left;
     display: flex;
@@ -73,13 +73,13 @@ html, body{
     text-align: center;
     background-color: rgb(237, 237, 237);
 }
-.menu-Icon:hover{
+.menu-icon:hover{
     background-color: rgb(218, 218, 218);
 }
-.menu-Icon:active{
+.menu-icon:active{
     background-color: rgb(202, 202, 202);
 }
-.standard-Sign{
+.standard-sign{
     cursor: default;
     display: flex;
     justify-content: center;
@@ -111,7 +111,7 @@ html, body{
 .keep-on-top:active{
     background-color: rgb(202, 202, 202);
 }
-.time-Pic{
+.time-pic{
     cursor: default;
     display: flex;
     justify-content: center;
@@ -122,32 +122,32 @@ html, body{
     background-color: rgb(237, 237, 237); 
     text-align: center;  
 }
-.time-Pic:hover{
+.time-pic:hover{
     background-color: rgb(218, 218, 218);
 }
-.time-Pic:active{
+.time-pic:active{
     background-color: rgb(202, 202, 202);
 }
 .empty-span-just-for-width{
     display:none;
 }
-.Memory-Icon{
+.memory-icon{
     display:none;
 }
-.History-Icon{
+.history-icon{
     display:none;
 }
-.His-Message{
+.his-message{
     display:none;
 }
-.Responsive-Block{
+.responsive-block{
     position: relative;
     background-color: rgb(237, 237, 237);
     width: 100%;
     height:88.7%;
     max-height: 100%;
 }
-.third-Block{
+.third-block{
     position: relative;
     height: 30%;
     width: 100%;
@@ -178,12 +178,12 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none; 
    margin: 0; 
 }
-.fourth-Block{
+.fourth-block{
     height: 6%;
     width: 100%;
     background-color: rgb(237, 237, 237);
 }
-.memIcon-Gray{
+.memicon-gray{
     display:inline-flex;
     justify-content: center;
     align-items: center; 
@@ -196,7 +196,7 @@ input[type=number]::-webkit-outer-spin-button {
     width:15%;
     background-color: rgb(237, 237, 237);
 }
-.memIcon-Black{
+.memicon-black{
     display:inline-flex;
     justify-content: center;
     align-items: center; 
@@ -209,17 +209,17 @@ input[type=number]::-webkit-outer-spin-button {
     width: 15%;
     background-color: rgb(237, 237, 237);
 }
-.memIcon-Black:hover{
+.memicon-black:hover{
 background-color: rgb(218, 218, 218);
 }
-.memIcon-Black:active{
+.memicon-black:active{
     background-color: rgb(202, 202, 202);
 }
-#memIcon-Minus{
+#memicon-minus{
     float: right;
     color: darkgrey;
 }
-.fifth-Block{
+.fifth-block{
     position: relative;
     display: table;
     position: relative;
@@ -229,14 +229,14 @@ background-color: rgb(218, 218, 218);
     max-height: 100%;
     min-height: 60%;
 } 
-.Buttons-Block{
+.buttons-block{
     display: relative;
     width: 100%;
     height: 100%;
     max-height: 100%;
     min-height: 60%;
 }
-.Buttons{
+.buttons{
     float:left;
     height: 16.9%;
     width:24.5%;
@@ -250,13 +250,13 @@ background-color: rgb(218, 218, 218);
     border: 1px solid rgb(237, 237, 237);
     max-height: 100%;
 }
-.Buttons:hover{
+.buttons:hover{
     background-color: rgb(218, 218, 218);
 }
-.Buttons:active{
+.buttons:active{
     background-color: rgb(202, 202, 202);
 }
-.num-Buttons{
+.num-buttons{
     height: 16.9%;
     width: 24.5%;
     float: left;
@@ -271,53 +271,53 @@ background-color: rgb(218, 218, 218);
     font-size:20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.num-Buttons:hover{
+.num-buttons:hover{
     background-color: rgb(218, 218, 218);
 }
-.num-Buttons:active{
+.num-buttons:active{
     background-color: rgb(202, 202, 202);
 }
-#blue-Button1:hover{
+#blue-button1:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue-Button1:active{
+#blue-button1:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#blue-Button2:hover{
+#blue-button2:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue-Button2:active{
+#blue-button2:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#blue-Button3:hover{
+#blue-button3:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue-Button3:active{
+#blue-button3:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#blue-Button4:hover{
+#blue-button4:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue-Button4:active{
+#blue-button4:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#blue-Button5:hover{
+#blue-button5:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue-Button5:active{
+#blue-button5:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#new-Cell{
+#new-cell{
     display: none;
 }
 /*the biggest shape of calculator is below*/
@@ -327,25 +327,25 @@ only screen and (min-width: 1060px),
 .time-Pic{
     display: none;
   } 
-.main-Block{
+.main-block{
     height:100%;
   }
-.Responsive-Block{
+.Responsive-block{
     height: 88%;
   }
-.first-Block{
+.first-block{
     width: 100%;
     height: 27px;
 }
-.second-Block{
+.second-block{
     width: 100%;
     height:  35px;
 }
-.menu-Icon{
+.menu-icon{
     height: 35px;
     width: 35px;
 }
-.standard-Sign{
+.standard-sign{
     width:120px;
     padding-left: 15px;
     justify-content: left;
@@ -366,7 +366,7 @@ only screen and (min-width: 1060px),
     display:inline-flex;
     width:55%;
 }
-.History-Icon{
+.history-icon{
     display:inline-flex;
     width:5%;
     font-size: 15px;
@@ -377,7 +377,7 @@ only screen and (min-width: 1060px),
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
-.Memory-Icon{
+.memory-icon{
     display:inline-flex;
     width:8%;
     font-size: 15px;
@@ -386,7 +386,7 @@ only screen and (min-width: 1060px),
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.His-Message{
+.his-message{
     display:inline-flex;
     width:25%;
     height: 35%;
@@ -397,7 +397,7 @@ only screen and (min-width: 1060px),
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
     
-.third-Block{
+.third-block{
     width: 100%;
     height: 30%;
 }
@@ -427,33 +427,33 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none; 
     margin: 0; 
 }
-.fourth-Block{
+.fourth-block{
     width: 70%;
     height:7%;
 }
-.fifth-Block{
+.fifth-block{
     width: 70%;
      height: 64%;
 }
-.Buttons-Block{
+.buttons-block{
      width:100%;
     height: 100%;
 }
-#memSing_minus{
+#memsing_minus{
     display: none;
 }
-.memIcon-Gray{ 
+.memicon-gray{ 
     width:80px;
     height: 100%; 
 }
-.memIcon-Black{
+.memicon-black{
     width:80px;
     height: 100%;
 }
-#memIcon-Minus{
+#memicon-minus{
     display: none;
 }     
-.Buttons-Block{
+.buttons-block{
     width:100%;
     height:100%;
     display:flex;
@@ -507,7 +507,7 @@ input[type=number]::-webkit-outer-spin-button {
 #num6{
     order:14;
 }
-#new-Cell{
+#new-cell{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -525,27 +525,27 @@ input[type=number]::-webkit-outer-spin-button {
 #num10{
     order:23;
 }
-#blue-Button1{
+#blue-button1{
     order:5;
     font-size: 25px;
 }
-#blue-Button2{
+#blue-button2{
     order:10;
     font-size: 25px;
 }
-#blue-Button3{
+#blue-button3{
     order:15;
     font-size: 25px;
 }
-#blue-Button4{
+#blue-button4{
     order:20;
     font-size: 25px;
 }
-#blue-Button5{
+#blue-button5{
     order:25;
     font-size: 25px;
 }
-.Buttons{
+.buttons{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -556,7 +556,7 @@ input[type=number]::-webkit-outer-spin-button {
     /* font: bold; */
    
 }
-.num-Buttons{
+.num-buttons{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -571,7 +571,7 @@ input[type=number]::-webkit-outer-spin-button {
 @media 
 only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width: 404px) 
   {
-    .main-Block{
+    .main-block{
         width: 320px;
         height: 380px; 
     }   
@@ -580,15 +580,15 @@ only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width
         padding-top: 15px;
         font-size: 40px;
     }
-    .first-Block{
+    .first-block{
         height:30px;
         width: 320px;
     }
-    .cal-Name{
+    .cal-name{
         padding-top: 10px;
         height: 20px;
     }
-    .second-Block{
+    .second-block{
         height:45px;
         width: 320px;
     }
@@ -603,63 +603,63 @@ only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width
         background-color: rgb(237, 237, 237); 
         text-align: center;
     }
-    .menu-Icon{
+    .menu-icon{
         height: 40px;
         width: 40px;
     }
-    .standard-Sign{
+    .standard-sign{
         padding-left: 10px;
         height: 35px;
     }
-    .time-Pic{
+    .time-pic{
         height: 40px;
         width: 40px;
     }
     .empty-span-just-for-width{
         display:none;
     }
-    .HisMem-Icons{
+    .hismem-icons{
         display:none;
     }
-    .History-Message{
+    .history-message{
         display:none;
     }
-    .Responsive-Block{
+    .responsive-block{
         height: 340px;
         width: 320px;
     }
-    .third-Block{
+    .third-block{
         height: 83px;
     }
-    .fourth-Block{
+    .fourth-block{
         height: 22px;
         width:95%;
         margin:5px;
     }
-    .memIcon-Gray{
+    .memicon-gray{
         padding-top: 8px;
         width: 43px;
         margin:1px;
     }
-    .memIcon-Black{
+    .memicon-black{
         padding-top: 8px;
         width: 43px;
         margin:1px;
     }
-    #memIcon-Minus{
+    #memicon-minus{
         color: darkgrey;
     }
-    .fifth-Block{
+    .fifth-block{
         position: relative;
         width:320px;
         height: 100px;
         background-color: rgb(237, 237, 237);
     }
-    .Buttons-Block{
+    .buttons-block{
         width: 320px;
         height: 100px;
     }
-    .num-Buttons{
+    .num-buttons{
         display:inline-flex;
         justify-content: center;
         align-items: center;
@@ -672,7 +672,7 @@ only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width
         background-color: rgb(251, 251, 251);
         border: 1px solid rgb(237, 237, 237);
     }
-    .Buttons{
+    .buttons{
         display:inline-flex;
         
         float:left;
@@ -693,20 +693,20 @@ only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width
     only screen and (min-width: 650px) and (max-width:1060px),(min-device-width: 650px) and (max-device-width: 1060px)
       {
 
-    .time-Pic{
+    .time-pic{
             display: none;
         }
-    .first-Block{
+    .first-block{
             width: 100%;
             height:27px;
         }
-    .second-Block{
+    .second-block{
             display:flex;
             flex-flow: row;
             width: 100%;
             height:35px;
         }
-    .standard-Sign{
+    .standard-sign{
             width:110px;
             padding-left: 15px;
             justify-content: left;
@@ -727,7 +727,7 @@ only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width
             background-color: rgb(237, 237, 237); 
             text-align: center;
         }
-    .History-Icon{
+    .history-icon{
             display:inline-flex;
             width:7%;
             font-size: 15px;
@@ -738,7 +738,7 @@ only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width
             align-items: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
-    .Memory-Icon{
+    .memory-icon{
             display:inline-flex;
             width:12%;
             font-size: 15px;
@@ -747,7 +747,7 @@ only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width
             align-items: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
-    .His-Message{
+    .his-message{
             display:inline-flex;
             width:25%;
             height: 35%;
@@ -758,7 +758,7 @@ only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
-    .third-Block{
+    .third-block{
             width: 100%;
             height: 30%;
     }
@@ -788,25 +788,25 @@ only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width
             -webkit-appearance: none; 
             margin: 0; 
     }
-    .fourth-Block{
+    .fourth-block{
             width: 70%;
             height:7%;
     }
-    .Responsive-Block{
+    .responsive-block{
             height:91.5%;
             max-height: 100%;
     }
-    .fifth-Block{
+    .fifth-block{
             width: 70%;
             height: 63%;
             max-height: 100%;
     }
-    .Buttons-Block{
+    .buttons-block{
             width:100%;
             height: 100%;
             max-height: 100%;
     }
-    .num-Buttons{
+    .num-buttons{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -815,7 +815,7 @@ only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width
             max-height: 100%;
             font-size: 130%;
     }
-    .Buttons{
+    .buttons{
             display: flex;
             justify-content: center;
             align-items: center;
