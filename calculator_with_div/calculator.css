@@ -4,219 +4,218 @@ html, body{
     height: 100%;
     max-height: 100%;
 }
-
-    
-    
-
-.wholeCalculator{
+.main-Block{
     position: relative;
     background-color: rgb(237, 237, 237);
     width: 100%;
     height: 100%;
-    /* border: 1px solid rgb(24, 131, 215); */
-    max-height: 100%;
-   
+    max-height: 100%; 
 }
-.first_Block{
+.first-Block{
     position: relative;
-    height: 27px;
+    height: 40px;
     width: 100%;
     background-color: rgb(237, 237, 237);
- 
 }
-.calName{
-padding-top: 5px;
-padding-left: 10px;
+.cal-Name{
+    padding-top: 5px;
+    padding-left: 10px;
     cursor: default;
-display: inline-block; 
-height: 10px;
-width:30%;
-float:left;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 12px;
-background-color: rgb(237, 237, 237);
-
+    display: inline-block; 
+    height: 10px;
+    width:30%;
+    float:left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    background-color: rgb(237, 237, 237);
 }
-.top_Sings{
- 
+.close-min-max-Icons{
     cursor: default;
     float:right;
     display:inline-flex;
     justify-content: center;
-  align-items: center;
-height: 27px;
-width: 45px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 18px;
-text-align: center;
-background-color: rgb(237, 237, 237);
+    align-items: center;
+    height: 27px;
+    width: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(237, 237, 237);
 }
-.top_Sings:hover{
+.close-min-max-Icons:hover{
     background-color: rgb(218, 218, 218);
 }
-.top_Sings:active{
+.close-min-max-Icons:active{
     background-color: rgb(202, 202, 202);
 }
-#close_Button:hover{
+#close-Button:hover{
     background-color: rgb(232, 17, 35);
 }
-#close_Button:active{
+#close-Button:active{
     background-color: rgb(241, 112, 122);
     color: azure;
 }
-.second_Block{
+.second-Block{
     position: relative;
     height:27px;
     width: 100%;
     background-color: rgb(237, 237, 237);
 }
-.menu_Sign{
+.menu-Icon{
     cursor: default;
     float:left;
     display: flex;
-  justify-content: center;
-  align-items: center;
-height: 27px;
-width: 25px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-text-align: center;
-background-color: rgb(237, 237, 237);
-
+    justify-content: center;
+    align-items: center;
+    height: 27px;
+    width: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: rgb(237, 237, 237);
 }
-
-.menu_Sign:hover{
+.menu-Icon:hover{
     background-color: rgb(218, 218, 218);
 }
-.menu_Sign:active{
+.menu-Icon:active{
     background-color: rgb(202, 202, 202);
 }
-.standard_Sign{
+.standard-Sign{
     cursor: default;
     display: flex;
     justify-content: center;
     align-items: center;
-  
-height: 27px;
-
-width: 100px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 20px;
-float:left;
-background-color: rgb(237, 237, 237);
+    height: 27px;
+    width: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    float:left;
+    background-color: rgb(237, 237, 237);
 }
-.time_Sign{
+.keep-on-top{
     cursor: default;
     display: flex;
-  justify-content: center;
-  align-items: center; 
+    justify-content: center;
+    align-items: center; 
+    height: 27px;
+    width: 30px;
+    float:left;
+    background-color: rgb(237, 237, 237); 
+    text-align: center;
+}
+.keep-on-top:hover{
+    background-color: rgb(218, 218, 218);
+}
+.keep-on-top:active{
+    background-color: rgb(202, 202, 202);
+}
+.time-Pic{
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
     height: 27px;
     width: 30px;
     float: right;
-    background-color: rgb(237, 237, 237);
-   
-    text-align: center;
-    
+    background-color: rgb(237, 237, 237); 
+    text-align: center;  
 }
-.time_Sign:hover{
+.time-Pic:hover{
     background-color: rgb(218, 218, 218);
 }
-.time_Sign:active{
+.time-Pic:active{
     background-color: rgb(202, 202, 202);
 }
-.Memory_icon{
+.empty-span-just-for-width{
     display:none;
 }
-.History_icon{display:none;}
-.His_message{display:none;}
-.part_Responsive{
+.Memory-Icon{
+    display:none;
+}
+.History-Icon{
+    display:none;
+}
+.His-Message{
+    display:none;
+}
+.Responsive-Block{
     position: relative;
     background-color: rgb(237, 237, 237);
     width: 100%;
     height:88.7%;
     max-height: 100%;
-    /* border: 1px solid rgb(24, 131, 215); */
 }
-
-.third_Block{
+.third-Block{
     position: relative;
     height: 30%;
     width: 100%;
-    
     background-color: rgb(237, 237, 237);
 }
 input[type=number] {
- padding-right: 5px;
+    padding-right: 5px;
     border: none;
     width: 95%;
     float: right;
     height: 70%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     text-align: right;
     cursor: default;
     background-color: rgb(237, 237, 237);
     font: bold;
 }
-
-  ::-webkit-input-placeholder { 
+::-webkit-input-placeholder { 
     color: black;
     font: bold;
   }
-  input:focus{
-      outline: none;
+input:focus{
+    outline: none;
   }
-  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
-  margin: 0; 
+   margin: 0; 
 }
-.fourth_Block{
+.fourth-Block{
     height: 6%;
     width: 100%;
     background-color: rgb(237, 237, 237);
 }
-.memSign_Gray{
+.memIcon-Gray{
     display:inline-flex;
     justify-content: center;
     align-items: center; 
-
     cursor: default;
-color: darkgrey;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 12px;
-text-align: center;
-
-height: 100%;
-width:15%;
-
-background-color: rgb(237, 237, 237);
+    color: darkgrey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    height: 100%;
+    width:15%;
+    background-color: rgb(237, 237, 237);
 }
-.memSign_Black{
+.memIcon-Black{
     display:inline-flex;
-  justify-content: center;
-  align-items: center; 
-   
+    justify-content: center;
+    align-items: center; 
     cursor: default;
     color:black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;
     text-align: center;
-   
     height:100%;
     width: 15%;
-   
     background-color: rgb(237, 237, 237);
 }
-.memSign_Black:hover{
+.memIcon-Black:hover{
 background-color: rgb(218, 218, 218);
 }
-.memSign_Black:active{
+.memIcon-Black:active{
     background-color: rgb(202, 202, 202);
 }
-#memSing_minus{
+#memIcon-Minus{
     float: right;
 }
-.fifth_Block{
+.fifth-Block{
     position: relative;
     display: table;
     position: relative;
@@ -225,31 +224,27 @@ background-color: rgb(218, 218, 218);
     background-color: rgb(237, 237, 237);
     max-height: 100%;
     min-height: 60%;
-}
-
-  
-.Buttons_Block{
+} 
+.Buttons-Block{
     display: relative;
     width: 100%;
     height: 100%;
     max-height: 100%;
     min-height: 60%;
 }
-
 .Buttons{
     float:left;
     height: 16.9%;
     width:24.5%;
     text-align: center;
     display: flex;
-  justify-content: center;
-  align-items: center; 
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-font-size: 20px;
+    justify-content: center;
+    align-items: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
     background-color: rgb(244, 244, 244);
- border: 1px solid rgb(237, 237, 237);
- max-height: 100%;
+    border: 1px solid rgb(237, 237, 237);
+    max-height: 100%;
 }
 .Buttons:hover{
     background-color: rgb(218, 218, 218);
@@ -257,202 +252,210 @@ font-size: 20px;
 .Buttons:active{
     background-color: rgb(202, 202, 202);
 }
-.num_Buttons{
+.num-Buttons{
     height: 16.9%;
     width: 24.5%;
     float: left;
     text-align: center;
-    /* padding-top: 5%; */
     background-color: rgb(251, 251, 251);
     border: 1px solid rgb(237, 237, 237);
     display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  max-height: 100%;
-  font-size:20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    max-height: 100%;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.num_Buttons:hover{
+.num-Buttons:hover{
     background-color: rgb(218, 218, 218);
 }
-.num_Buttons:active{
+.num-Buttons:active{
     background-color: rgb(202, 202, 202);
 }
-#blue_Button1:hover{
+#blue-Button1:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue_Button1:active{
+#blue-Button1:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#blue_Button2:hover{
+#blue-Button2:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue_Button2:active{
+#blue-Button2:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#blue_Button3:hover{
+#blue-Button3:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue_Button3:active{
+#blue-Button3:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#blue_Button4:hover{
+#blue-Button4:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue_Button4:active{
+#blue-Button4:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#blue_Button5:hover{
+#blue-Button5:hover{
     background-color: rgb(26,134, 219);
 color: antiquewhite;
 }
-#blue_Button5:active{
+#blue-Button5:active{
     background-color: rgb(176, 220, 255);
     color: aliceblue;
 }
-#new_Cell{
+#new-Cell{
     display: none;
 }
 /*the biggest shape of calculator is below*/
 @media 
 only screen and (min-width: 1060px),
 (min-device-width: 1060px) and (max-device-width: 1224px)  {
-  .time_Sign{
-      display: none;
+.time-Pic{
+    display: none;
   } 
-  .wholeCalculator{
-      height:100%;
+.main-Block{
+    height:100%;
   }
-  .part_Responsive{
-      height: 88%;
+.Responsive-Block{
+    height: 88%;
   }
-.first_Block{
+.first-Block{
     width: 100%;
     height: 27px;
 }
-.second_Block{
+.second-Block{
     width: 100%;
     height:  27px;
 }
-.standard_Sign{
-    width:66%;
+.standard-Sign{
+    width:7%;
     padding-left: 2%;
     justify-content: left;
     align-items: left;
 }
-        .History_icon{
-          display:inline-flex;
-          width:5%;
-          font-size: 15px;
-                font-weight:bold; 
-                border-bottom: 3px solid rgb(0, 120, 215);
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
-      .Memory_icon{
-        display:inline-flex;
-        width:8%;
-        font-size: 15px;
-              font-weight:bold; 
-              justify-content: center;
-                align-items: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
-    .His_message{
-        display:inline-flex;
-        width:25%;
-        height: 35%;
-        font-size: 15px;
-              font-weight:bold; 
-              justify-content: left;
-                align-items: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+.keep-on-top{
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 27px;
+    width: 3%;
+    float: left;
+    background-color: rgb(237, 237, 237); 
+    text-align: center;
+}
+.empty-span-just-for-width{
+    display:inline-flex;
+    width:56%;
+}
+.History-Icon{
+    display:inline-flex;
+    width:5%;
+    font-size: 15px;
+    font-weight:bold; 
+    border-bottom: 3px solid rgb(0, 120, 215);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+.Memory-Icon{
+    display:inline-flex;
+    width:8%;
+    font-size: 15px;
+    font-weight:bold; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.His-Message{
+    display:inline-flex;
+    width:25%;
+    height: 35%;
+    font-size: 15px;
+    font-weight:bold; 
+    justify-content: left;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
     
-        .third_Block{
-            width: 100%;
-            height: 30%;
-        }
-        input[type=number] {
-            padding-right: 25px;
-               border: none;
-               width: 68%;
-               float: left;
-               height: 70%;
-               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-               font-size: 70px;
-               text-align: right;
-               cursor: default;
-               background-color: rgb(237, 237, 237);
-               font: bold;
-           }
+.third-Block{
+    width: 100%;
+    height: 30%;
+}
+input[type=number] {
+    padding-right: 25px;
+    border: none;
+    width: 68%;
+    float: left;
+    height: 70%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: right;
+    cursor: default;
+    background-color: rgb(237, 237, 237);
+    font: bold;
+}
            
-             ::-webkit-input-placeholder { 
-               color: black;
-               font: bold;
-             }
-             input:focus{
-                 outline: none;
-             }
-             input[type=number]::-webkit-inner-spin-button, 
-           input[type=number]::-webkit-outer-spin-button { 
-             -webkit-appearance: none; 
-             margin: 0; 
-           }
-        .fourth_Block{
-            width: 70%;
-            height:7%;
-        }
-        .fifth_Block{
-            width: 70%;
-            height: 64%;}
-        .Buttons_Block{
-                width:100%;
-                height: 100%;
-         }
-
-
-
-	
-	#memSing_minus{
-        display: none;
-    }
-    .memSign_Gray{
-        
-        width:80px;
-      
-        height: 100%;
-       
-    }
-    .memSign_Black{
-        width:80px;
-        height: 100%;
-    }
-    #memSing_minus{
-        display: none;
-    }     
-   .Buttons_Block{
-   width:100%;
-   height:100%;
-display:flex;
-flex-flow: row;
-flex-wrap: wrap;
-flex-flow: row wrap;
-max-height: 100%;
-   }
+::-webkit-input-placeholder { 
+    color: black;
+    font: bold;
+}
+input:focus{
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+.fourth-Block{
+    width: 70%;
+    height:7%;
+}
+.fifth-Block{
+    width: 70%;
+     height: 64%;
+}
+.Buttons-Block{
+     width:100%;
+    height: 100%;
+}
+#memSing_minus{
+    display: none;
+}
+.memIcon-Gray{ 
+    width:80px;
+    height: 100%; 
+}
+.memIcon-Black{
+    width:80px;
+    height: 100%;
+}
+#memIcon-Minus{
+    display: none;
+}     
+.Buttons-Block{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    max-height: 100%;
+}
 #cell1{
-order: 1;
+    order: 1;
 }
 #cell2{
     order: 6;
@@ -496,10 +499,10 @@ order: 1;
 #num6{
     order:14;
 }
-#new_Cell{
+#new-Cell{
     display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
     order:16;
 }
 #num7{
@@ -514,23 +517,23 @@ order: 1;
 #num10{
     order:23;
 }
-#blue_Button1{
+#blue-Button1{
     order:5;
     font-size: 25px;
 }
-#blue_Button2{
+#blue-Button2{
     order:10;
     font-size: 25px;
 }
-#blue_Button3{
+#blue-Button3{
     order:15;
     font-size: 25px;
 }
-#blue_Button4{
+#blue-Button4{
     order:20;
     font-size: 25px;
 }
-#blue_Button5{
+#blue-Button5{
     order:25;
     font-size: 25px;
 }
@@ -542,10 +545,10 @@ order: 1;
     height: 20%;
     max-height: 100%;
     font-size: 25px;
-    font: bold;
+    /* font: bold; */
    
 }
-.num_Buttons{
+.num-Buttons{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -560,83 +563,110 @@ order: 1;
 @media 
 only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width: 404px) 
   {
-    .wholeCalculator{
+    .main-Block{
         width: 320px;
-      height: 380px;
-  
-      }
-      
-        input[type=number]{
-            padding-right: 4px;
-        font-size: 55px;
+        height: 380px; 
+    }   
+    input[type=number]{
+        padding-right: 15px;
+        padding-top: 15px;
+        font-size: 40px;
     }
-    .first_Block{
+    .first-Block{
         height:30px;
         width: 320px;
     }
-    .second_Block{
-        height:30px;
+    .cal-Name{
+        padding-top: 10px;
+        height: 20px;
+    }
+    .second-Block{
+        height:45px;
         width: 320px;
     }
-    .part_HisMem{
+    .menu-Icon{
+        height: 40px;
+        width: 40px;
+    }
+    .standard-Sign{
+        padding-left: 10px;
+        height: 35px;
+    }
+    .time-Pic{
+        height: 40px;
+        width: 40px;
+    }
+    .empty-span-just-for-width{
         display:none;
     }
-    .HisMem_Icons{
+    .HisMem-Icons{
         display:none;
     }
-    .History_message{
+    .History-Message{
         display:none;
     }
-    .part_Responsive{
+    .Responsive-Block{
         height: 340px;
         width: 320px;
     }
-    .fourth_Block{
+    .third-Block{
+        height: 83px;
+    }
+    .fourth-Block{
         height: 22px;
         width:95%;
         margin:5px;
     }
-    .memSign_Gray{
+    .memIcon-Gray{
         padding-top: 8px;
         width: 43px;
         margin:1px;
     }
-    .memSign_Black{
+    .memIcon-Black{
         padding-top: 8px;
         width: 43px;
         margin:1px;
     }
-    .fifth_Block{
+    #memIcon-Minus{
+        color: darkgrey;
+    }
+    .fifth-Block{
         position: relative;
         width:320px;
         height: 100px;
         background-color: rgb(237, 237, 237);
     }
-    .Buttons_Block{
+    .Buttons-Block{
         width: 320px;
         height: 100px;
     }
-    .num_Buttons{
+    .num-Buttons{
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
         width: 78px;
-        height:35px;
+        height:49px;
         float: left;
-        padding-top: 12.5px;
-        font-size: 20px;
+        
+        font-size: 18px;
         text-align: center;
         background-color: rgb(251, 251, 251);
         border: 1px solid rgb(237, 237, 237);
-        
     }
     .Buttons{
+        display:inline-flex;
+        
         float:left;
         width: 78px;
-        height:35px;
-        padding-top: 12.5px;
+        height:49px;
+        
         text-align: center;
-        font-size: 15px;
+        font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
         background-color: rgb(244, 244, 244);
-     border: 1px solid rgb(237, 237, 237);
+        border: 1px solid rgb(237, 237, 237);
+        justify-content: center;
+        align-items: center;
     }
     }
     /*normal size of calculator between the biggest shape and  the smallest shape when time shape disappear*/
@@ -644,122 +674,135 @@ only screen and (max-width: 404px),(min-device-width: 1px) and (max-device-width
     only screen and (min-width: 650px) and (max-width:1060px),(min-device-width: 650px) and (max-device-width: 1060px)
       {
 
-        .time_Sign{
+    .time-Pic{
             display: none;
         }
-        .first_Block{
+    .first-Block{
             width: 100%;
             height:27px;
         }
-        .second_Block{
+    .second-Block{
             display:flex;
             flex-flow: row;
             width: 100%;
             height:27px;
         }
-.standard_Sign{
-    width:66%;
-    padding-left: 2%;
-    justify-content: left;
-    align-items: left;
-}
-        .History_icon{
-          display:inline-flex;
-          width:7%;
-          font-size: 15px;
-                font-weight:bold; 
-                border-bottom: 3px solid rgb(0, 120, 215);
-                text-align: center;
-                justify-content: center;
-                align-items: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .standard-Sign{
+            width:15%;
+            padding-left: 2%;
+            justify-content: left;
+            align-items: left;
+        }
+        .empty-span-just-for-width{
+            display:inline-flex;
+            width:45%;
+        }
+        .keep-on-top{
+            cursor: default;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 27px;
+            width: 5%;
+            float: right;
+            background-color: rgb(237, 237, 237); 
+            text-align: center;
+        }
+    .History-Icon{
+            display:inline-flex;
+            width:7%;
+            font-size: 15px;
+            font-weight:bold; 
+            border-bottom: 3px solid rgb(0, 120, 215);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
-      .Memory_icon{
-        display:inline-flex;
-        width:12%;
-        font-size: 15px;
-              font-weight:bold; 
-              justify-content: center;
-                align-items: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .Memory-Icon{
+            display:inline-flex;
+            width:12%;
+            font-size: 15px;
+            font-weight:bold; 
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
-    .His_message{
-        display:inline-flex;
-        width:25%;
-        height: 35%;
-        font-size: 15px;
-              font-weight:bold; 
-              justify-content: left;
-                align-items: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .His-Message{
+            display:inline-flex;
+            width:25%;
+            height: 35%;
+            font-size: 15px;
+            font-weight:bold; 
+            justify-content: left;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
-        .third_Block{
+    .third-Block{
             width: 100%;
             height: 30%;
-        }
-        input[type=number] {
+    }
+    input[type=number] {
             padding-right: 5px;
-               border: none;
-               width: 70%;
-               float: left;
-               height: 70%;
-               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-               font-size: 70px;
-               text-align: right;
-               cursor: default;
-               background-color: rgb(237, 237, 237);
-               font: bold;
-           }
+            border: none;
+            width: 70%;
+            float: left;
+            height: 70%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 50px;
+            text-align: right;
+            cursor: default;
+            background-color: rgb(237, 237, 237);
+            font: bold;
+    }
            
-             ::-webkit-input-placeholder { 
-               color: black;
-               font: bold;
+    ::-webkit-input-placeholder { 
+            color: black;
+            font: bold;
+    }
+    input:focus{
+            outline: none;
              }
-             input:focus{
-                 outline: none;
-             }
-             input[type=number]::-webkit-inner-spin-button, 
-           input[type=number]::-webkit-outer-spin-button { 
-             -webkit-appearance: none; 
-             margin: 0; 
-           }
-        .fourth_Block{
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+    }
+    .fourth-Block{
             width: 70%;
             height:7%;
-        }
-        .part_Responsive{
+    }
+    .Responsive-Block{
             height:91.5%;
             max-height: 100%;
-        }
-        .fifth_Block{
+    }
+    .fifth-Block{
             width: 70%;
             height: 63%;
-        
-        max-height: 100%;}
-        .Buttons_Block{
-                width:100%;
-                height: 100%;
-                max-height: 100%;
-         }
-        .num_Buttons{
+            max-height: 100%;
+    }
+    .Buttons-Block{
+            width:100%;
+            height: 100%;
+            max-height: 100%;
+    }
+    .num-Buttons{
             display: flex;
             justify-content: center;
             align-items: center;
-                width: 24.5%;
-                height: 15.9%;
-                max-height: 100%;
-            
-                font-size: 130%;
-            }
-            .Buttons{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 24.5%;
-                height: 15.9%;
-                font-size: 130%;
-                max-height: 100%;
-               
-            }
+            width: 24.5%;
+            height: 15.9%;
+            max-height: 100%;
+            font-size: 130%;
     }
+    .Buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24.5%;
+            height: 15.9%;
+            font-size: 130%;
+            max-height: 100%;  
+    }
+}
