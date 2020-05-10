@@ -324,7 +324,7 @@ color: antiquewhite;
 @media 
 only screen and (min-width: 1060px),
 (min-device-width: 1060px) and (max-device-width: 1224px)  {
-.time-Pic{
+.time-pic{
     display: none;
   } 
 .main-block{
