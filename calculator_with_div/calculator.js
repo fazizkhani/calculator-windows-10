@@ -9,12 +9,17 @@ var sec_add_inp_value;
 var sec_div_inp_value;
 var sec_mul_inp_value;
 var sec_min_inp_value;
+var add_inp_comp_value;
+var mul_input_comp_value;
+var div_input_comp_value;
+var min_input_comp_value;
 var add_sighn = 1;
 var min_sighn = 1;
 var mul_sighn = 1;
 var div_sighn = 1;
-var mem_index;
-var his_index;
+var mem_index = 0;
+var his_index = 1;
+var his_row_indx = 0;
 var clear_inp_val_index;
 
 function closeCalculator() {
@@ -49,21 +54,93 @@ function goToTaskbarCalculator() {
 }
 //var add_final_value;
 function add() {
+    var his_inp_show = document.getElementById('input_show').innerHTML;
+    var input_value_his = document.getElementById('input-block').value;
+    document.getElementById('input_show').innerHTML = his_inp_show + input_value_his + "&plus;";
    if(add_sighn == 2 && document.getElementById('input-block').value != ""){
         sec_add_input_val = document.getElementById('input-block').value;
         if(sec_add_input_val == ""){
-            sec_add_input_val =   document.getElementById('input-block').placeholder;
+            sec_add_input_val =   document.getElementById("input-block").placeholder;
         }
         var result; 
-        result = Number(sec_add_input_val) + Number(add_input_value);
+        result = Number(sec_add_input_val) + Number(add_inp_comp_value);
         document.getElementById('input-block').value = "";
         document.getElementById('input-block').placeholder = result;
         add_input_value = result;
+        add_inp_comp_value = result;
         add_sighn = 2;
         num_index = 1;
         dot_index = 1;
         return add_sighn, num_index,dot_index,add_input_value;
         }
+        if(add_sighn == 3 && document.getElementById('input-block').value != ""){
+
+            sec_add_input_val = document.getElementById('input-block').value;
+            if(sec_add_input_val == ""){
+                sec_add_input_val =   document.getElementById("input-block").placeholder;
+            }
+            var result; 
+            result = Number(sec_add_input_val) + Number(add_inp_comp_value);
+            document.getElementById('input-block').value = "";
+            document.getElementById('input-block').placeholder = result;
+           // mul_input_value = result;
+            add_inp_comp_value = result;
+            add_sighn = 2;
+            num_index = 1;
+            dot_index = 1;
+            return add_sighn, num_index,dot_index,add_inp_comp_value;
+            }
+        if(mul_sighn == 2 && document.getElementById('input-block').value != ""){
+            sec_mul_input_val = document.getElementById('input-block').value;
+            if(sec_mul_input_val == ""){
+                sec_mul_input_val =   document.getElementById('input-block').placeholder;
+            }
+            var result; 
+            result = Number(add_inp_comp_value) * Number(sec_mul_input_val);
+            document.getElementById('input-block').value = "";
+            document.getElementById('input-block').placeholder = result;
+            mul_input_value = result;
+            add_inp_comp_value = result;
+            mul_sighn = 1;
+            num_index = 1;
+            dot_index = 1;
+            add_sighn = 3;
+            return mul_sighn,mul_input_value, num_index,dot_index,add_inp_comp_value;
+            }
+            if(div_sighn == 2 && document.getElementById('input-block').value != ""){
+                sec_div_input_val = document.getElementById('input-block').value;
+                if(sec_div_input_val == ""){
+                    sec_div_input_val =   document.getElementById('input-block').placeholder;
+                }
+                var result; 
+                result = Number(add_inp_comp_value) / Number(sec_div_input_val);
+                document.getElementById('input-block').value = "";
+                document.getElementById('input-block').placeholder = result;
+                div_input_value = result;
+                add_inp_comp_value = result;
+                div_sighn = 1;
+                num_index = 1;
+                dot_index = 1;
+                add_sighn = 3;
+                return div_sighn,div_input_value, num_index,dot_index,add_inp_comp_value;
+                }
+                if(min_sighn == 2 && document.getElementById('input-block').value != ""){
+                    sec_min_input_val = document.getElementById('input-block').value;
+                    if(sec_min_input_val == ""){
+                        sec_min_input_val =   document.getElementById('input-block').placeholder;
+                    }
+                    var result; 
+                    result = Number(add_inp_comp_value) - Number(sec_min_input_val);
+                    document.getElementById('input-block').value = "";
+                    document.getElementById('input-block').placeholder = result;
+                    min_input_value = result;
+                    add_inp_comp_value = result;
+                    min_sighn = 1;
+                    num_index = 1;
+                    dot_index = 1;
+                    add_sighn = 3;
+                    return min_sighn,min_input_value, num_index,dot_index,add_inp_comp_value;
+                    }
     else if ( add_sighn == 1 ) {
         add_input_value = document.getElementById('input-block').value;
         if(add_input_value == ""){
@@ -74,28 +151,104 @@ function add() {
         num_index = 1;
         dot_index = 1;
         add_sighn =2;
-        return add_input_value, add_sighn, num_index,dot_index;
+        div_input_comp_value = add_input_value;
+        mul_input_comp_value = add_input_value;
+        min_input_comp_value =add_input_value;
+        add_inp_comp_value =add_input_value;
+        
+        return add_input_value, add_sighn, num_index,dot_index,add_inp_comp_value;
     }
-
+   
     return add_sighn;
     
 }
 function divide() {
+    var his_inp_show = document.getElementById('input_show').innerHTML;
+    var input_value_his = document.getElementById('input-block').value;
+    document.getElementById('input_show').innerHTML = his_inp_show + input_value_his + "/";
     if(div_sighn == 2 && document.getElementById('input-block').value != ""){
         sec_div_input_val = document.getElementById('input-block').value;
         if(sec_div_input_val == ""){
             sec_div_input_val =   document.getElementById('input-block').placeholder;
         }
         var result; 
-        result = Number(div_input_value) / Number(sec_div_input_val);
+        result = Number(div_input_comp_value) / Number(sec_div_input_val);
         document.getElementById('input-block').value = "";
         document.getElementById('input-block').placeholder = result;
         div_input_value = result;
+        div_input_comp_value = result;
         div_sighn = 2;
         num_index = 1;
         dot_index = 1;
-        return div_sighn,div_input_value, num_index,dot_index;
+        return div_sighn,div_input_value, num_index,dot_index,div_input_comp_value;
         }
+        if(div_sighn == 3 && document.getElementById('input-block').value != ""){
+            sec_div_input_val = document.getElementById('input-block').value;
+            if(sec_div_input_val == ""){
+                sec_div_input_val =   document.getElementById('input-block').placeholder;
+            }
+            var result; 
+            result = Number(div_input_comp_value) / Number(sec_div_input_val);
+            document.getElementById('input-block').value = "";
+            document.getElementById('input-block').placeholder = result;
+            div_input_value = result;
+            div_input_comp_value = result;
+            div_sighn = 2;
+            num_index = 1;
+            dot_index = 1;
+            return div_sighn,div_input_value, num_index,dot_index,div_input_comp_value;
+            }
+        if(mul_sighn == 2 && document.getElementById('input-block').value != ""){
+            sec_mul_input_val = document.getElementById('input-block').value;
+            if(sec_mul_input_val == ""){
+                sec_mul_input_val =   document.getElementById('input-block').placeholder;
+            }
+            var result; 
+            result = Number(div_input_comp_value) * Number(sec_mul_input_val);
+            document.getElementById('input-block').value = "";
+            document.getElementById('input-block').placeholder = result;
+            mul_input_value = result;
+            div_input_comp_value = result;
+            mul_sighn = 1;
+            num_index = 1;
+            dot_index = 1;
+            div_sighn = 3;
+            return mul_sighn,mul_input_value, num_index,dot_index,div_input_comp_value;
+            }
+            if(min_sighn == 2 && document.getElementById('input-block').value != ""){
+                sec_min_input_val = document.getElementById('input-block').value;
+                if(sec_min_input_val == ""){
+                    sec_min_input_val =   document.getElementById('input-block').placeholder;
+                }
+                var result; 
+                result = Number(div_input_comp_value) - Number(sec_min_input_val);
+                document.getElementById('input-block').value = "";
+                document.getElementById('input-block').placeholder = result;
+                min_input_value = result;
+                div_input_comp_value = result;
+                min_sighn = 1;
+                num_index = 1;
+                dot_index = 1;
+                div_sighn = 3;
+                return min_sighn,min_input_value, num_index,dot_index,div_input_comp_value;
+                }
+                if(add_sighn == 2 && document.getElementById('input-block').value != ""){
+                    sec_add_input_val = document.getElementById('input-block').value;
+                    if(sec_add_input_val == ""){
+                        sec_add_input_val =   document.getElementById('input-block').placeholder;
+                    }
+                    var result; 
+                    result = Number(sec_add_input_val) + Number(div_input_comp_value);
+                    document.getElementById('input-block').value = "";
+                    document.getElementById('input-block').placeholder = result;
+                    add_input_value = result;
+                    div_input_comp_value = result;
+                    add_sighn = 1;
+                    num_index = 1;
+                    dot_index = 1;
+                    div_sighn = 3;
+                    return add_sighn, num_index,dot_index,add_input_value,div_input_comp_value;
+                    }
     else if ( div_sighn == 1 ) {
         div_input_value = document.getElementById('input-block').value;
         if(div_input_value == ""){
@@ -106,28 +259,105 @@ function divide() {
         num_index = 1;
         dot_index = 1;
         div_sighn =2;
-        return div_input_value, div_sighn, num_index,dot_index;
+        div_input_comp_value = div_input_value;
+        mul_input_comp_value = div_input_value;
+        min_input_comp_value = div_input_value;
+        add_inp_comp_value = div_input_value;
+        return div_input_value, div_sighn, num_index,dot_index,div_input_comp_value;
     }
+    
+  
     
     return div_sighn;
 }
 
 function mul() {
+    var his_inp_show = document.getElementById('input_show').innerHTML;
+    var input_value_his = document.getElementById('input-block').value;
+    document.getElementById('input_show').innerHTML = his_inp_show + input_value_his + " &times;";
     if(mul_sighn == 2 && document.getElementById('input-block').value != ""){
         sec_mul_input_val = document.getElementById('input-block').value;
         if(sec_mul_input_val == ""){
             sec_mul_input_val =   document.getElementById('input-block').placeholder;
         }
         var result; 
-        result = Number(mul_input_value) * Number(sec_mul_input_val);
+        result = Number(mul_input_comp_value) * Number(sec_mul_input_val);
         document.getElementById('input-block').value = "";
         document.getElementById('input-block').placeholder = result;
         mul_input_value = result;
+        mul_input_comp_value = result;
         mul_sighn = 2;
         num_index = 1;
         dot_index = 1;
-        return mul_sighn,mul_input_value, num_index,dot_index;
+        return mul_sighn,mul_input_value, num_index,dot_index,mul_input_comp_value;
         }
+        if(mul_sighn == 3 && document.getElementById('input-block').value != ""){
+            sec_mul_input_val = document.getElementById('input-block').value;
+            if(sec_mul_input_val == ""){
+                sec_mul_input_val =   document.getElementById('input-block').placeholder;
+            }
+            var result; 
+            result = Number(mul_input_comp_value) * Number(sec_mul_input_val);
+            document.getElementById('input-block').value = "";
+            document.getElementById('input-block').placeholder = result;
+            mul_input_value = result;
+            mul_input_comp_value = result;
+            mul_sighn = 2;
+            num_index = 1;
+            dot_index = 1;
+            return mul_sighn,mul_input_value, num_index,dot_index,mul_input_comp_value;
+            }
+        if(div_sighn == 2 && document.getElementById('input-block').value != ""){
+            sec_div_input_val = document.getElementById('input-block').value;
+            if(sec_div_input_val == ""){
+                sec_div_input_val =   document.getElementById('input-block').placeholder;
+            }
+            var result; 
+            result = Number(mul_input_comp_value) / Number(sec_div_input_val);
+            document.getElementById('input-block').value = "";
+            document.getElementById('input-block').placeholder = result;
+            div_input_value = result;
+            mul_input_comp_value = result;
+            div_sighn = 1;
+            num_index = 1;
+            dot_index = 1;
+            mul_sighn = 3;
+            return div_sighn,div_input_value, num_index,dot_index,mul_input_comp_value;
+            }
+            if(min_sighn == 2 && document.getElementById('input-block').value != ""){
+                sec_min_input_val = document.getElementById('input-block').value;
+                if(sec_min_input_val == ""){
+                    sec_min_input_val =   document.getElementById('input-block').placeholder;
+                }
+                var result; 
+                result = Number(mul_input_comp_value) - Number(sec_min_input_val);
+                document.getElementById('input-block').value = "";
+                document.getElementById('input-block').placeholder = result;
+                min_input_value = result;
+                mul_input_comp_value = result;
+                min_sighn = 1;
+                num_index = 1;
+                dot_index = 1;
+                mul_sighn = 3;
+                return min_sighn,min_input_value, num_index,dot_index,mul_input_comp_value;
+                }
+                if(add_sighn == 2 && document.getElementById('input-block').value != ""){
+                    sec_add_input_val = document.getElementById('input-block').value;
+                    if(sec_add_input_val == ""){
+                        sec_add_input_val =   document.getElementById('input-block').placeholder;
+                    }
+                    var result; 
+                    result = Number(sec_add_input_val) + Number(mul_input_comp_value);
+                    document.getElementById('input-block').value = "";
+                    document.getElementById('input-block').placeholder = result;
+                    add_input_value = result;
+                    mul_input_comp_value = result;
+                    add_sighn = 1;
+                    num_index = 1;
+                    dot_index = 1;
+                    mul_sighn = 3;
+                    return add_sighn, num_index,dot_index,add_input_value,mul_input_comp_value;
+                    }
     else if ( mul_sighn == 1 ) {
         mul_input_value = document.getElementById('input-block').value;
         if(mul_input_value == ""){
@@ -135,30 +365,104 @@ function mul() {
         }
         document.getElementById('input-block').value = "";
         document.getElementById('input-block').placeholder = mul_input_value;
+        mul_input_comp_value = mul_input_value;
+        div_input_comp_value = mul_input_value;
+        min_input_comp_value = mul_input_value;
+        add_inp_comp_value = mul_input_value;
         num_index = 1;
         dot_index = 1;
         mul_sighn =2;
-        return mul_input_value, mul_sighn, num_index,dot_index;
+        return mul_input_value, mul_sighn, num_index,dot_index,mul_input_comp_value;
     }
-    
     return mul_sighn;
 }
 function reduce() {
+    var his_inp_show = document.getElementById('input_show').innerHTML;
+    var input_value_his = document.getElementById('input-block').value;
+    document.getElementById('input_show').innerHTML = his_inp_show + input_value_his + "-";
     if(min_sighn == 2 && document.getElementById('input-block').value != ""){
         sec_min_input_val = document.getElementById('input-block').value;
         if(sec_min_input_val == ""){
             sec_min_input_val =   document.getElementById('input-block').placeholder;
         }
         var result; 
-        result = Number(sec_min_input_val) * Number(min_input_value);
+        result = Number(min_input_comp_value) - Number(sec_min_input_val);
         document.getElementById('input-block').value = "";
         document.getElementById('input-block').placeholder = result;
         min_input_value = result;
+        min_input_comp_value = result;
         min_sighn = 2;
         num_index = 1;
         dot_index = 1;
-        return min_sighn,min_input_value, num_index,dot_index;
+        return min_sighn,min_input_value, num_index,dot_indexوmin_input_comp_value;
         }
+        if(min_sighn == 3 && document.getElementById('input-block').value != ""){
+            sec_min_input_val = document.getElementById('input-block').value;
+            if(sec_min_input_val == ""){
+                sec_min_input_val =   document.getElementById('input-block').placeholder;
+            }
+            var result; 
+            result = Number(min_input_comp_value) - Number(sec_min_input_val);
+            document.getElementById('input-block').value = "";
+            document.getElementById('input-block').placeholder = result;
+            min_input_value = result;
+            min_input_comp_value = result;
+            min_sighn = 2;
+            num_index = 1;
+            dot_index = 1;
+            return min_sighn,min_input_value, num_index,dot_index,min_input_comp_value;
+            }
+        if(add_sighn == 2 && document.getElementById('input-block').value != ""){
+            sec_add_input_val = document.getElementById('input-block').value;
+            if(sec_add_input_val == ""){
+                sec_add_input_val =   document.getElementById('input-block').placeholder;
+            }
+            var result; 
+            result = Number(sec_add_input_val) + Number(min_input_comp_value);
+            document.getElementById('input-block').value = "";
+            document.getElementById('input-block').placeholder = result;
+            add_input_value = result;
+            min_input_comp_value  = result;
+            add_sighn = 1;
+            num_index = 1;
+            dot_index = 1;
+            min_sighn = 3;
+            return add_sighn, num_index,dot_index,add_input_value,min_input_comp_value ;
+            }
+            if(mul_sighn == 2 && document.getElementById('input-block').value != ""){
+                sec_mul_input_val = document.getElementById('input-block').value;
+                if(sec_mul_input_val == ""){
+                    sec_mul_input_val =   document.getElementById('input-block').placeholder;
+                }
+                var result; 
+                result = Number(min_input_comp_value) * Number(sec_mul_input_val);
+                document.getElementById('input-block').value = "";
+                document.getElementById('input-block').placeholder = result;
+                mul_input_value = result;
+                min_input_comp_value  = result;
+                mul_sighn = 1;
+                num_index = 1;
+                dot_index = 1;
+                min_sighn = 3;
+                return mul_sighn,mul_input_value, num_index,dot_index,min_input_comp_value ;
+                }
+                if(div_sighn == 2 && document.getElementById('input-block').value != ""){
+                    sec_div_input_val = document.getElementById('input-block').value;
+                    if(sec_div_input_val == ""){
+                        sec_div_input_val =   document.getElementById('input-block').placeholder;
+                    }
+                    var result; 
+                    result = Number(min_input_comp_value) / Number(sec_div_input_val);
+                    document.getElementById('input-block').value = "";
+                    document.getElementById('input-block').placeholder = result;
+                    div_input_value = result;
+                    min_input_comp_value  = result;
+                    div_sighn = 1;
+                    num_index = 1;
+                    dot_index = 1;
+                    min_sighn = 3;
+                    return div_sighn,div_input_value, num_index,dot_index,min_input_comp_value ;
+                    }
     else if ( min_sighn == 1 ) {
         min_input_value = document.getElementById('input-block').value;
         if(min_input_value == ""){
@@ -166,58 +470,162 @@ function reduce() {
         }
         document.getElementById('input-block').value = "";
         document.getElementById('input-block').placeholder = min_input_value;
+        min_input_comp_value = min_input_value;
+        mul_input_comp_value = min_input_value;
+        div_input_comp_value = min_input_value;
+        add_inp_comp_value = min_input_value;
         num_index = 1;
         dot_index = 1;
         min_sighn =2;
-        return min_input_value, min_sighn, num_index,dot_index;
+        return min_input_value, min_sighn, num_index,dot_index,min_input_comp_value;
     }
     
     return min_sighn;
     
 }
 function percent() {
+
     if (min_sighn == 2) {
         var second_input_value = document.getElementById('input-block').value;
         var percent_result = (Number(second_input_value) * Number(min_input_value)) / 100;
         document.getElementById('input-block').value = Number(percent_result);
         min_sighn = 1;
     }
+   
 }
+var equal_his_show;
+var equal_his_seccond;
 function equal() {
+  //  if(document.getElementById('input_show').innerHTML == )
+    var his_inp_show =  document.getElementById('input_show').innerHTML;
+    
     if (add_sighn == 2) {
         var second_input_value = document.getElementById('input-block').value;
+        
         var add_result = Number(add_input_value) + Number(second_input_value);
         document.getElementById('input-block').value = Number(add_result);
+       // if(his_index == 1){ 
+            equal_his_show = document.getElementById('his-message').innerHTML ;
+            if(equal_his_show != "There's no history yet"){
+                equal_his_seccond = his_inp_show + second_input_value + "=" +add_result+"</br>" + equal_his_show  ;
+            }
+           else if(equal_his_show == "There's no history yet"){
+            equal_his_seccond = his_inp_show +  second_input_value + "=" + add_result;
+            }
+            equal_his_show = equal_his_seccond ;
+            document.getElementById('input_show').innerHTML = ""; 
+            his_row_indx = 1;//}
     }
     else if (min_sighn == 2) {
         var second_input_value = document.getElementById('input-block').value;
         var min_result = Number(min_input_value) - Number(second_input_value);
         document.getElementById('input-block').value = Number(min_result);
+      //  if(his_index == 1){ 
+            equal_his_show = document.getElementById('his-message').innerHTML ;
+            if(equal_his_show != "There's no history yet"){
+                equal_his_seccond = his_inp_show + second_input_value + "=" + min_result+"</br>" + equal_his_show  ;
+            }
+           else if(equal_his_show == "There's no history yet"){
+            equal_his_seccond = his_inp_show +  second_input_value + "=" + min_result;
+            }
+            equal_his_show = equal_his_seccond ;
+            document.getElementById('input_show').innerHTML = ""; 
+            his_row_indx = 1;//}
     }
     else if (mul_sighn == 2) {
         var second_input_value = document.getElementById('input-block').value;
         var mul_result = Number(mul_input_value) * Number(second_input_value);
         document.getElementById('input-block').value = Number(mul_result);
+      //  if(his_index == 1){ 
+            equal_his_show = document.getElementById('his-message').innerHTML ;
+         //   if(equal_his_show != "There's nothing saved in memory"){
+            if(equal_his_show != "There's no history yet"){
+                equal_his_seccond = his_inp_show + second_input_value + "=" +mul_result+"</br>" + equal_his_show  ;
+            }
+           else if(equal_his_show == "There's no history yet"){
+            equal_his_seccond = his_inp_show +  second_input_value + "=" +mul_result;
+            }
+            equal_his_show = equal_his_seccond ;
+            document.getElementById('input_show').innerHTML = ""; 
+            his_row_indx = 1;//}
+      //  }
+      //  else if(equal_his_show == "There's nothing saved in memory"){
+
+      //     
     }
     else if (div_sighn == 2) {
         var second_input_value = document.getElementById('input-block').value;
+        
         var div_result = Number(div_input_value) / Number(second_input_value);
         document.getElementById('input-block').value = Number(div_result);
+      // if(his_index == 1){ 
+        equal_his_show = document.getElementById('his-message').innerHTML ;
+        if(equal_his_show != "There's no history yet"){
+            equal_his_seccond = his_inp_show + second_input_value + "=" + div_result+"</br>" + equal_his_show  ;
+        }
+       else if(equal_his_show == "There's no history yet"){
+        equal_his_seccond = his_inp_show +  second_input_value + "=" + div_result;
+        }
+        equal_his_show = equal_his_seccond;
+        document.getElementById('input_show').innerHTML = ""; 
+        his_row_indx = 1;//}
+       
     }
     add_sighn = 1;
     min_sighn = 1;
     div_sighn = 1;
     mul_sighn = 1;
     mul_index = 1;
+    if(his_index == 1){
+        document.getElementById('his-message').innerHTML = equal_his_seccond;
+    }
+    return   equal_his_show, equal_his_seccond;
+    
+}
+function onex() {
+    var his_inp_show =  document.getElementById('input_show').innerHTML;
+
+    var input_value = document.getElementById('input-block').value;
+    var one_div_inputVal = 1 / input_value;
+    document.getElementById('input-block').value = one_div_inputVal;
+    document.getElementById('input_show').innerHTML ="1/"+ his_inp_show ;
+}
+function xtwo() {
+    var his_inp_show =  document.getElementById('input_show').innerHTML;
+    var input_value = document.getElementById('input-block').value;
+    var x_power_two = input_value * input_value;
+    document.getElementById('input-block').value = x_power_two;
+    document.getElementById('input_show').innerHTML =  "sql("+ input_value+")";
+}
+function xthree() {
+    var his_inp_show =  document.getElementById('input_show').innerHTML;
+    var input_value = document.getElementById('input-block').value;
+    var x_power_three = input_value * input_value * input_value;
+    document.getElementById('input-block').value = x_power_three;
+    document.getElementById('input_show').innerHTML =  his_inp_show +"cube("+ input_value+ ")";
+}
+function radical() {
+    var his_inp_show =  document.getElementById('input_show').innerHTML;
+    var input_value_his = document.getElementById('input-block').value;
+    if(input_value > 0){
+    var radical_val = Math.sqrt(input_value);}
+    else if(input_value < 0){
+        var radical_val = "000";
+    }
+    document.getElementById('input-block').value = radical_val;
+    document.getElementById('input_show').innerHTML =  his_inp_show + "&radic;("+ input_value_his +")";
 }
 
 function negativePositive() {
+    var his_inp_show =  document.getElementById('input_show').innerHTML;
     var input_value = document.getElementById('input-block').value;
     document.getElementById('input-block').value = input_value * -1;
+    document.getElementById('input_show').innerHTML = "negate("+ his_inp_show + input_value+ ")";
 }
 function clearAllNumber() {
     document.getElementById('input-block').value = "";
     document.getElementById('input-block').placeholder = "0";
+    document.getElementById('input_show').innerHTML = "";
     num_index = 1;
     dot_index = 1;
     return num_index,dot_index;
@@ -238,18 +646,20 @@ function clearOneNumber() {
         for (let i = 0; i < input_arr.length - 1; i++) {
             clear_input_arr[i] = input_arr[i];
         }
+       
 
         document.getElementById('input-block').value = clear_input_arr.join('');
     }
     else if(Number.isInteger(Number(input_value)) != true){
         var input_value =document.getElementById('input-block').value;
-        var input_arr = input_value.split('');
-        var clear_input_arr = [];
+        var input_value_string = String(input_value);
+        var input_arr = input_value_string.split('');
+        var clear_input_arr_s = [];
         for (let i = 0; i < input_arr.length - 1; i++) {
-            clear_input_arr[i] = input_arr[i];
+            clear_input_arr_s[i] = input_arr[i];
         }
-var new_inp_val = clear_input_arr.join('');
-        document.getElementById('input-block').value = clear_input_arr.join('');
+        var clear_input_value_n = clear_input_arr_s.join('');
+        document.getElementById('input-block').value = Number(clear_input_value_n);
     }
 }
 var inner_message;
@@ -272,9 +682,17 @@ function His() {
     var hisIcon = document.getElementById("history-icon");
     hisIcon.style.borderBottom = "3px solid rgb(0, 120, 215)";
     memIcon.style.borderBottom = "none";
-    document.getElementById('his-message').innerHTML="There's no history yet";
+  
+   
     his_index = 1;
     mem_index = 0;
+    if(his_row_indx == 1){
+        document.getElementById('his-message').innerHTML=equal_his_show ;
+    }
+        
+    if(his_row_indx == 0){
+        document.getElementById('his-message').innerHTML="There's no history yet";
+    }
     return his_index,mem_index;
 }
 function mems() {
@@ -326,10 +744,10 @@ function memp() {
 
 }
 function memn() {
-    if(mem_index == 1){
+   
     var input_value = document.getElementById('input-block').value;
     var mem_text = document.getElementById('his-message');
-    if (document.getElementById('memicon-clear').style.color != 'black') {
+    if (document.getElementById('memicon-clear').style.color !=  'black') {
         var new_negative_value = -1 * Number(input_value);
         inner_message = new_negative_value;
     }
@@ -342,16 +760,18 @@ function memn() {
 
         inner_message = new_value;
     }
-}
-var memc_color = document.getElementById('memicon-clear');
+    var memc_color = document.getElementById('memicon-clear');
 memc_color.style.color = 'black';
 var memr_color = document.getElementById('memicon-replace');
 memr_color.style.color = 'black';
 if(mem_index == 1){
-    mem_text.innerHTML = inner_message; 
+    mem_text.innerHTML = inner_message;
+
+
 }
 return inner_message;
 }
+
 function memc() {
     if (document.getElementById('memicon-clear').style.color == 'black') {
     if(mem_index == 1){
@@ -360,7 +780,7 @@ function memc() {
 }
 
 else if(his_index == 1){
-    document.getElementById('his-message').innerHTML = "There's nothing history";
+    document.getElementById('his-message').innerHTML = "There's no history yet";
 }
 var memc_color = document.getElementById('memicon-clear');
 memc_color.style.color = 'darkgrey';
@@ -387,33 +807,7 @@ function memr() {
 }
 
 
-
-function onex() {
-    var input_value = document.getElementById('input-block').value;
-    var one_div_inputVal = 1 / input_value;
-    document.getElementById('input-block').value = one_div_inputVal;
-}
-function xtwo() {
-    var input_value = document.getElementById('input-block').value;
-    var x_power_two = input_value * input_value;
-    document.getElementById('input-block').value = x_power_two;
-}
-function xthree() {
-    var input_value = document.getElementById('input-block').value;
-    var x_power_three = input_value * input_value * input_value;
-    document.getElementById('input-block').value = x_power_three;
-}
-function radical() {
-    var input_value = document.getElementById('input-block').value;
-    if(input_value > 0){
-    var radical_val = Math.sqrt(input_value);}
-    else if(input_value < 0){
-        var radical_val = "000";
-    }
-    document.getElementById('input-block').value = radical_val;
-}
-
-
+////numbers///
 function dot() {
     dot_index = dot_index + default_val;
    return dot_index;
